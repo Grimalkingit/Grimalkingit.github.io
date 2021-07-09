@@ -162,7 +162,7 @@
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		/*if (typeof DeviceMotionEvent.requestPermission === 'function') {
+		if (typeof DeviceMotionEvent.requestPermission === 'function') {
 			// Handle iOS 13+ devices.
 			DeviceMotionEvent.requestPermission()
 				.then((state) => {
@@ -176,9 +176,8 @@
 		} else {
 			// Handle regular non iOS 13+ devices.
 			window.addEventListener('devicemotion', handleOrientation);
-		}*/
+		}
 
-		window.addEventListener('devicemotion', handleOrientation);
 
 		var gamma = 0.0;
 		function handleOrientation(event) {
